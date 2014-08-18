@@ -2,7 +2,9 @@ AdaTreeNat
 ==========
 
 Mining Adaptively Frequent Closed Unlabeled Rooted Trees in Data Streams.
+
 Albert Bifet and Ricard Gavaldà.
+
 14th ACM SIGKDD Intl. Conference on Knowledge Discovery and Data Mining (KDD'08)
 
 This software is an implementation of three closed unlabeled tree mining algorithms:
@@ -11,21 +13,21 @@ This software is an implementation of three closed unlabeled tree mining algorit
  - one that mines closed trees adaptively from data streams, ADATREENAT
 
 INSTALL:
-========
+---------
 
 To compile the program : type 'make' in the test directory
-To clean: type 'make clean' in test directory
+To clean: type 'make clean' in the test directory
 
 PLATFORM:
-=========
+---------
 This program has been compiled using g++ 4.2 and tested on Linux.
 
 LICENSE TERMS:
-==============
+---------
 Under GNU Public License terms. 
 
 USAGE:
-======
+---------
 The usage of the program is: AdaTreeNat [Options], where Options are:
 
 - -s <support>    Set the absolute or relative minimum support  (default 10%)
@@ -45,12 +47,11 @@ The usage of the program is: AdaTreeNat [Options], where Options are:
 - -b <batchSize>  Set size of the batches (default 10,000)
 - -w <windowSize> Set size of the sliding window (default 100,000)
 - -r <intervals>  Set the number of relaxed intervals (default 10,000)
-
 - -help           Display this ussage help
 
-------------------------------------------------------------------------
 
-The input should be text file in :
+
+The input should be a text file that uses:
 
 - TreeNat's string encoding form :
    * each line represents a transaction
